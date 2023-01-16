@@ -11,11 +11,8 @@ public class Car {
     private int series;
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-
-@OneToOne
-    private User user;
 
     public Car() {
 
